@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-entry {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-title {
+            font-size: 22px;
+            color: #333;
+            cursor: pointer;
+        }
+        .blog-date {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .blog-content {
+            font-size: 16px;
+            color: #555;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleContent(element) {
+            var content = element.nextElementSibling.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    My Blog
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+    <!-- Blog Entry 1 -->
+    <div class="blog-entry">
+        <h2 class="blog-title" onclick="toggleContent(this)">Learning New Things: Coding a Website</h2>
+        <p class="blog-date">February 3, 2024</p>
+        <p class="blog-content">Hello! This is my first blog post. I figured it would be a good opportunity to share the experience of coding my first website with some prior coding knowledge.
+            I do have some experience coding in the past, taking computer science in high school I was taught the Java programming language at a basic level. After some time it took some refreshing while attempting to learn how to code a video game in the Java language.
+            But as I came to discover, websites don't use Java, but instead primarily another language called HTML (as well as CSS and JavaScript). After watching a basic YouTube tutorial and following along, I understood the basic concepts. I also looked into how to host the website so that anyone can access it through a search engine. Overall, not as hard as I once thought.
+            After exploring existing templates and experimenting with some AI assistance, I am equiped with some limited knowledge to tinker with the website and configure it in a way that suits me. This first version is not the final version, but so far I am happy with the quality of the website given my skill level.
+
+        </p>
+    </div>
+
+    <!-- Blog Entry 2 -->
+    <div class="blog-entry">
+        <h2 class="blog-title" onclick="toggleContent(this)">Another Interesting Topic</h2>
+        <p class="blog-date">January 15, 2025</p>
+        <p class="blog-content">This is another blog entry. You can continue adding new posts by copying this section and modifying the content.</p>
+    </div>
+</div>
+</body>
+</html>

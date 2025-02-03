@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Conner Quiring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project-entry {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .project-title {
+            font-size: 22px;
+            color: #333;
+            cursor: pointer;
+        }
+        .project-date {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .project-content {
+            font-size: 16px;
+            color: #555;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleContent(element) {
+            var content = element.nextElementSibling.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    My Projects
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+    <!-- Project Entry 1 -->
+    <div class="project-entry">
+        <h2 class="project-title" onclick="toggleContent(this)">Project: _____</h2>
+        <p class="Project-date">February 3, ____</p>
+        <p class="project-content"> Enter info here</p>
+    </div>
+    <!-- Project Entry 2 -->
+    <div class="project-entry">
+        <h2 class="project-title" onclick="toggleContent(this)">Project: _____ 2</h2>
+        <p class="Project-date">February 3, ____</p>
+        <p class="project-content"> Enter info here</p>
+    </div>
+
+</div>
+</body>
+</html>
